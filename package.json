@@ -1,0 +1,17 @@
+{
+  "name": "ppx_noalloc",
+  "esy": {
+    "build": "dune build -p #{ self.name }",
+    "install": "esy-installer #{ self.name }.install"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/ppxlib": "*",
+    "@opam/reason": "*",
+    "ocaml": "*"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "*",
+    "ocaml": "4.12.0"
+  }
+}

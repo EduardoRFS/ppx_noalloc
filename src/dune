@@ -1,0 +1,8 @@
+(library
+ (name ppx_noalloc)
+ (public_name ppx_noalloc)
+ (kind ppx_rewriter)
+ (instrumentation.backend
+  (ppx ppx_noalloc))
+ ; TODO: (synopsis)
+ (libraries ppxlib compiler-libs.bytecomp compiler-libs.optcomp))
